@@ -1,0 +1,38 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+      driver-class-name:  com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/springboot?characterEncoding=utf-8
+      username: root
+      password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+wechat:
+  myAppId: wxb1fae59859ed38b1
+  myAppSecret: ea33db736d3d89b2e4afc5b24c323f3a
+  mchId: 1409146202
+  mchKey: wxb1fae59859ed38b1
+  keyPath: wxb1fae59859ed38b1
+  notifyUrl: wxb1fae59859ed38b1
+projectUrl:
+ wechatMpAuthorize:
+  wechatOpenAuthorize:
+  sell:
+#  myAppId: wx9483ab76ca9b5cf5
+#  myAppSecret: 65fa0656a38cbb84b872c976de3036b4
+#logging:
+#  pattern:
+##    console: "%d - %msg%n"
+##  path: F:\java\Logback
+#  file: F:\java\Logback\sell.log
+#  level:
+#    org.fsj.demo.LoggerTest.java : debug
